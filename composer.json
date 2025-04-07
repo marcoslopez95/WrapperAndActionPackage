@@ -1,0 +1,32 @@
+{
+    "name": "manu/wrap-and-action-package",
+    "description": "a package for create action classes and wrap classes",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Manu\\WrapAndActionPackage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JustSteveKing\\DataObjects\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "role": "Developer",
+            "name": "Marcos M. López",
+            "email": "marcoslopez1895@gmail.com",
+            "homepage": "https://marcoslopez95.github.io"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    }
+}
