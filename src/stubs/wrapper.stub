@@ -1,0 +1,12 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use App\Http\Casts\CastsRequest;
+
+final class {{ class }} extends CastsRequest
+{
+    //
+}
