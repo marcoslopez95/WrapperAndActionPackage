@@ -5,7 +5,7 @@ namespace Manu\WrapAndActionPackage;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Collection;
-abstract class CastsRequest extends Collection
+abstract class Wrapper extends Collection
 {
     protected Collection $inputs;
     public function __construct(

@@ -1,12 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace {{ namespace }};
 
-use App\Http\Casts\CastsRequest;
+use Manu\WrapAndActionPackage\Wrapper;
 
-final class {{ class }} extends CastsRequest
+final class {{ class }} extends Wrapper
 {
     //
 }
