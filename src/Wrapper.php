@@ -44,11 +44,23 @@ abstract class Wrapper extends Collection
         return filter_var($value, FILTER_VALIDATE_BOOLEAN);
     }
 
-    protected function getInt(string $input, mixed $default = null): ?int
+    protected function getInt(string $input, int $default = null): ?int
     {
         $value = $this->get($input);
 
         return $value ? (int) $value : $default;
+    }
+
+    protected function getFloat(string $input, float $default = null): ?float
+    {
+        $value = $this->get($input);
+
+        return $value ? (float) $value : $default;
+    }
+
+    protected function getDouble(string $input, float $default = null): ?float
+    {
+        return $this->getFloat($input, $default);
     }
 
     protected function getCollect(string $input, ?array $default = null): ?Collection
@@ -87,7 +99,7 @@ abstract class Wrapper extends Collection
         return null;
     }
 
-    protected function cast(string $input, string $class): ?object
+    protected function cast(string $input, string $class)
     {
         return $this->has($input)
             ? new $class($this->get($input), $this->request)
