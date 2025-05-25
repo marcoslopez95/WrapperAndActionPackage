@@ -13,6 +13,13 @@
             "Manu\\WrapAndActionPackage\\Tests\\": "tests/"
         }
     },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Manu\\WrapAndActionPackage\\Providers\\WrapAndActionPackage"
+        ]
+      }
+    },
     "authors": [
         {
             "role": "Developer",
