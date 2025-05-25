@@ -1,8 +1,9 @@
 <?php
 
 namespace {{ namespace }};
+use Manu\WrapAndActionPackage\ActionInterface;
 
-final class {{ class }}
+final class {{ class }} implements ActionInterface
 {
     public function invoke(): mixed
     {
